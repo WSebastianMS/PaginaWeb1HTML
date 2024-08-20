@@ -15,23 +15,22 @@
         <h2>Login</h2>
         <form action="Guide.html">
             <fieldset>
-                <label for="fname">Nombres:</label><br>
-                <input type="text" id="fname" name="fname" required><br>
-                <label for="lname">Apellidos:</label><br>
-                <input type="text" id="lname" name="lname" required><br>
-                <label for="email">Correo electronico:</label><br>
+                <label for="email">Correo electronico:</label>
                 <input type="email" id="email" name="email" required><br>
-                <label for="telefono">Telefono:</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br>
-                <label for="bdate">Fecha de nacimiento</label><br>
-                <input type="date" id="bdate" name="bdate" required><br><br>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required><br><br>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
     </section>
     <section>
         <p>Si no estas registrado presiona el siguiente boton</p>
-        <button ></button>
+        <button onclick="redirigir()">Registrarme</button>
     </section>
+    <script>
+        function redirigir(){
+            window.location.href = "register.html"
+        }
+    </script>    
 </body>
 </html>
